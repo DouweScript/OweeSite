@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>De Bolk OWee</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Welkom op de OWee 2017 website van de Bolk. Je vindt hier alle informatie over wat de Bolk is, en wat we doen tijdens de OWee en daarbuiten">
+<meta name="keywords" content="bolk, owee, owee 2017">
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="webfontkit-20150505-094458/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="css/style.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/lib/jquery.min-1.8.2.js">\x3C/script>')</script>
+
+<link type="text/css" href="css/jquery.mmenu.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+<script type="text/javascript" src="js/addons/jquery.mmenu.fixedelements.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function( $ ) {
+        $("#menu").mmenu({
+            navbar: false
+        }, {
+            classNames: {
+                selected: "active"
+            }
+        });
+    });
+</script>
+
+</head>
+
+<body>
+
+<div> <!-- Wrapper -->
+    <div id="header" class="Fixed">
+        <div id="header-inner">
+            <div id="header-logo">
+                <a href="index.html">
+                    <img src="img/bolkvis.png">
+                    <p>De Bolk<br>OWee 2017</p>
+                </a>
+            </div>
+            
+            <a id="menu-icon" onclick='$("#menu").data("mmenu").open()'></a>
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vereniging.html">Vereniging</a></li>
+                    <li><a href="programma.html">Programma</a></li>
+                    <li><a href="kmt.html">KMT</a></li>
+                    <li class="active"><a href="sleepinn.html">Sleep-Inn</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Sleep-Inn</h1>
+        <p id="sleepinn">
+            Delft is de beste plaats om te bijven slapen tijdens de OWee.
+            Zo kan je alle activiteiten maximaal mee pakken.
+            Helaas is het elk jaar weer een flinke opgave om alle aankomende eerstejaars een slaapplek te bezorgen.
+            Voor degenen die niet in studentenhuizen worden ingedeeld door het OWeeBestuur betekent dit helaas dat ze in de gymzaal moeten slapen.
+            Heb jij geen zin om massaal in de sportzaal te slapen?
+            Of heb je echt een hekel aan je huidige slaapadres?
+            Je kunt ook gezellig in een studentenhuis van de Bolk overnachten!
+            <br><br>
+            Er zijn een aantal Bolkhuizen waar jij een slaapplaats kunt krijgen, o.a. het aan de sociëteit verbonden Bolkhuisch, verkozen tot studentenhuis van het jaar 2011!
+            Lijkt jou dat wel wat? Schrijf je dan hieronder in!
+        </p>
+        <div class="centered">
+            <img src="img/kamer1.png" class="sleepinn-wide">
+            <img src="img/kamer3.png" class="sleepinn-wide">
+            <img src="img/kamer2.png" class="sleepinn-tall">
+        </div>
+        <center><a href="https://docs.google.com/forms/d/e/1FAIpQLScc7G5H7TPboWPmdT4NdWfbvp_CZZBTMj7oS0X6Cv-J9gl3GA/viewform?usp=sf_link" id="sleepinn_enroll">Schrijf je in!</a></center> <!-- Hier moet je achter href heet google-form plakken -->
+    </div>
+	<div id="footer" class="Fixed"> <!-- align="center" -->
+		<p id="footertext"> 
+			&copy; 2017 <a href="http://debolk.nl/">D.S.V. Nieuwe Delft</a> | OWee De Bolk 2017 sponsored by <a href="https://www.hostnet.nl/"><img src="img/hostnet.svg" alt="Hostnet"></a> | Website template created by <!--<a href="http://annebusch.nl/">-->Anne Busch<!--</a>-->
+		</p>
+	</div>
+</div> <!-- #wrapper -->
+
+<nav id="menu"> 
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vereniging.html">Vereniging</a></li>
+        <li><a href="programma.html">Programma</a></li>
+        <li><a href="kmt.html">KMT</a></li>
+        <li class="active"><a href="sleepinn.html">Sleep-Inn</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<title>De Bolk OWee</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Welkom op de OWee 2017 website van de Bolk. Je vindt hier alle informatie over wat de Bolk is, en wat we doen tijdens de OWee en daarbuiten">
+<meta name="keywords" content="bolk, owee, owee 2017">
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="webfontkit-20150505-094458/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="css/style.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/lib/jquery.min-1.8.2.js">\x3C/script>')</script>
+
+<link type="text/css" href="css/jquery.mmenu.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+<script type="text/javascript" src="js/addons/jquery.mmenu.fixedelements.min.js"></script>
+
+<!--[if lte IE 8]>
+    <script type="text/javascript" src="js/ie8.polyfil.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/imageMapResizer.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function( $ ) {
+		$("#menu").mmenu({
+			navbar: false
+		}, {
+			classNames: {
+				selected: "active"
+			}
+		});
+	});
+
+	$(document).ready(function() {
+		$('map').imageMapResize();
+	});
+</script>
+
+</head>
+
+<body>
+
+<div> <!-- Wrapper -->
+	<div id="header" class="Fixed">
+		<div id="header-inner">
+			<div id="header-logo">
+				<a href="index.html">
+					<img src="img/bolkvis.png">
+					<p>De Bolk<br>OWee 2017</p>
+				</a>
+			</div>
+			
+			<a id="menu-icon" onclick='$("#menu").data("mmenu").open()'></a>
+			<div id="nav"> 
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="vereniging.html">Vereniging</a></li>
+					<li class="active"><a href="programma.html">Programma</a></li>
+					<li><a href="kmt.html">KMT</a></li>
+					<li><a href="sleepinn.html">Sleep-Inn</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="content" id="programma">
+		<div id="programma-text">
+			<h1>Programma</h1>
+			<p>
+				Ook dit jaar hebben we tijdens de OWee iedere dag weer gave activiteiten! 
+				Hieronder kan je een uitgebreid overzicht vinden van wat er tijdens de OWee allemaal bij de Bolk te doen is.
+			</p>
+		</div>
+		<hr>
+		<span id="scripts">
+			<script type="text/javascript">
+				// Script to hide elements
+				$(document).ready(function() {
+					$(".expanded").hide();
+
+					$(".act-header").click(function() {
+						$(this).children(".expanded, .collapsed").toggle();
+						$(this).parent().children(".expanded, .collapsed").toggle();
+					});
+
+					$(".act-all").click(function() {
+						if ($(this).children(".expanded").is(":visible")){
+							$(".expanded").hide();
+							$(".collapsed").show();
+						} else {
+							$(".expanded").show();
+							$(".collapsed").hide();
+						}
+					});
+
+					$("area").click(function(event){
+						var activity = event.target.getAttribute("href").substring(1);
+						var activity_elem = $(document.getElementById(activity));
+						activity_elem.find(".expanded").show();
+						activity_elem.find(".collapsed").hide();
+					});
+				});
+			</script>
+		</span>
+
+		<img src="img/Maandag.png" class="blokschema" id="maandag" usemap="#map_Maandag">
+		<img src="img/Dinsdag.png" class="blokschema" id="dinsdag" usemap="#map_Dinsdag">
+		<img src="img/Woensdag.png" class="blokschema" id="woensdag" usemap="#map_Woensdag">
+		<img src="img/Donderdag.png" class="blokschema" id="donderdag" usemap="#map_Donderdag">
+				<span id="image_map">
+			<map name="map_Maandag">
+				<area shape="rect" coords="425,5,575,43" href="#activiteiten-Maandag" alt="Maandag">
+				<area shape="rect" coords="5,67,153,212" href="#MEGASpellen" alt="MEGA spellen">
+				<area shape="rect" coords="158,67,306,212" href="#Eettafel" alt="Eettafel">
+				<area shape="rect" coords="311,67,459,137" href="#3DTwister" alt="3D Twister">
+				<area shape="rect" coords="311,142,459,212" href="#Vibratorrace" alt="Vibratorrace">
+				<area shape="rect" coords="464,67,918,212" href="#Cocktailnight" alt="Cocktailnight">
+				<area shape="rect" coords="923,67,994,212" href="#4uurcupasoup" alt="4 uur Cup-a-soup">
+			</map>
+			<map name="map_Dinsdag">
+				<area shape="rect" coords="434,5,566,42" href="#activiteiten-Dinsdag" alt="Dinsdag">
+				<area shape="rect" coords="5,67,153,162" href="#DartjeMentor" alt="Dart je Mentor">
+				<area shape="rect" coords="5,167,382,212" href="#Escaperoom" alt="Escaperoom">
+				<area shape="rect" coords="158,67,306,162" href="#Eettafel2" alt="Eettafel">
+				<area shape="rect" coords="311,67,382,112" href="#FluitketelCurling" alt="Fluitketel Curling">
+				<area shape="rect" coords="311,117,382,162" href="#Kroegsport" alt="Kroegsport">
+				<area shape="rect" coords="387,67,459,137" href="#MixjeMojito" alt="Mix je Mojito">
+				<area shape="rect" coords="387,142,459,212" href="#LocometChoco" alt="Loco met Choco">
+				<area shape="rect" coords="464,67,497,212" href="#Preimeppen" alt="Preimeppen">
+				<area shape="rect" coords="502,67,535,212" href="#Kijkhoehetklinkt" alt="Kijk hoe het klinkt">
+				<area shape="rect" coords="540,67,612,137" href="#RobotWars" alt="Robot Wars">
+				<area shape="rect" coords="540,142,688,212" href="#Tostiklussen" alt="Tostiklussen">
+				<area shape="rect" coords="617,67,688,137" href="#IrishHour" alt="Irish Hour">
+				<area shape="rect" coords="693,67,918,212" href="#FouteKaraoke" alt="Foute Karaoke">
+				<area shape="rect" coords="923,67,994,212" href="#4uurcupasoup2" alt="4 uur cup-a-soup">
+			</map>
+			<map name="map_Woensdag">
+				<area shape="rect" coords="414,5,586,43" href="#activiteiten-Woensdag" alt="Woensdag">
+				<area shape="rect" coords="5,67,153,137" href="#Retrogamen" alt="Retrogamen">
+				<area shape="rect" coords="5,142,153,212" href="#SleutelhangerKnopen" alt="Knoop je sleutelhanger">
+				<area shape="rect" coords="158,67,306,212" href="#Eettafel3" alt="Eettafel">
+				<area shape="rect" coords="311,67,344,212" href="#PimpjeFiets" alt="Pimp je Fiets">
+				<area shape="rect" coords="349,67,420,212" href="#VloerisLava" alt="Vloer-is-lava-borrel">
+				<area shape="rect" coords="425,67,497,162" href="#ToetjeseetWedstrijd" alt="Toetjeseetwedstrijd">
+				<area shape="rect" coords="425,167,574,212" href="#SpeciaalbierProeverij" alt="Speciaalbierproeverij">
+				<area shape="rect" coords="502,67,574,162" href="#Dozenfort" alt="Dozenfort">
+				<area shape="rect" coords="579,67,918,112" href="#ShortFilmMarathon" alt="Short Film Marathon">
+				<area shape="rect" coords="579,117,612,212" href="#BierviltjesOorlog" alt="Bierviltjesoorlog">
+				<area shape="rect" coords="617,117,650,212" href="#BlikbierKwar-tier" alt="Blikbierkwartier">
+				<area shape="rect" coords="655,117,918,212" href="#HardRockCafe" alt="Hard Rock Cafe ">
+				<area shape="rect" coords="923,67,994,212" href="#4uurcupasoup3" alt="4 uur cup-a-soup">
+			</map>
+			<map name="map_Donderdag">
+				<area shape="rect" coords="409,5,590,43" href="#activiteiten-Donderdag" alt="Donderdag">
+				<area shape="rect" coords="5,67,265,137" href="#Spa" alt="Spa">
+				<area shape="rect" coords="5,142,132,212" href="#HighTea" alt="High Tea">
+				<area shape="rect" coords="137,142,265,212" href="#Midgetgolf" alt="Midgetgolf">
+				<area shape="rect" coords="270,67,398,212" href="#Eettafel4" alt="Eettafel">
+				<area shape="rect" coords="403,67,530,212" href="#BandopdeBoot" alt="Band op de Boot">
+				<area shape="rect" coords="535,67,597,212" href="#KoekjesBakken" alt="Koekjes Bakken">
+				<area shape="rect" coords="602,67,928,212" href="#KrankzinnigeBorrel" alt="Krankzinnige Borrel">
+				<area shape="rect" coords="933,67,995,212" href="#4uurcupasoup4" alt="4 uur cup-a-soup">
+			</map>
+			
+		</span>
+		<br>
+		<hr>
+		<div id="activity_list">
+			<ul style="overflow:hidden;">
+				<li class="activiteit">
+					<a href="javascript:void(0)" class="act-all">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Alles in/uitklappen
+					</a>
+					<p class="expanded"></p>
+				</li>
+			</ul>
+			<h1 id="activiteiten-Maandag">Maandag</h1><ul>
+				<li class="activiteit" id="MEGASpellen">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						MEGA spellen
+					</a>
+					<p class="expanded">
+						Bij de Bolk hebben wij alles MEGA, daarom ook bellen. Kom bij ons genieten van het mooie weer en de mooie bellen en start je OWee goed.
+					</p>
+				</li>
+				<li class="activiteit" id="Eettafel">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Eettafel
+					</a>
+					<p class="expanded">
+						Onze eettafel bestaat uit een voorgerecht, een hoofdgerecht en een toetje, elke dag gemaakt door onze eigen leden met verse producten.
+					</p>
+				</li>
+				<li class="activiteit" id="3DTwister">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						3D Twister
+					</a>
+					<p class="expanded">
+						Klauter het hele vooronder van ons zeilschip door op weg naar de gekleurde rondjes, maar zorg dat je niet valt!
+					</p>
+				</li>
+				<li class="activiteit" id="Vibratorrace">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Vibratorrace
+					</a>
+					<p class="expanded">
+						Pimp een vibrator en race het snelst naar de finish! Puur genot.
+					</p>
+				</li>
+				<li class="activiteit" id="Cocktailnight">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Cocktailnight
+					</a>
+					<p class="expanded">
+						De beroemde Bolksche Cocktailnight wordt weer een groot feest! Met befaamde cocktails zoals de Pangalactic Gargleblaster en de Paarse Moederneuker!
+					</p>
+				</li>
+				<li class="activiteit" id="4-uur-cup-à-soup">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						4 uur Cup-a-soup
+					</a>
+					<p class="expanded">
+						Als je de avond bij ons hebt uitgespeeld kan je bij ons eindigen met een lekker kopje cup-a-soup. Dat zouden meer mensen moeten doen!
+					</p>
+				</li>
+			</ul>
+			<h1 id="activiteiten-Dinsdag">Dinsdag</h1><ul>
+				<li class="activiteit" id="DartjeMentor">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Dart je Mentor
+					</a>
+					<p class="expanded">
+						Ben jij je mentor zat? Heb jij een hekel aan Stalin? Wij maken een foto en projecteren hem op ons dartbord, jij mag kijken waar je de pijltjes wil gooien.
+					</p>
+				</li>
+				<li class="activiteit" id="Escaperoom">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Escaperoom
+					</a>
+					<p class="expanded">
+						Treed binnen in de escaperoom in het ruim van onze botter Trui. Kom jij er op tijd weer uit?
+					</p>
+				</li>
+				<li class="activiteit" id="Eettafel2">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Eettafel
+					</a>
+					<p class="expanded">
+						Onze eettafel bestaat uit een voorgerecht, een hoofdgerecht en een toetje, elke dag gemaakt door onze eigen leden met verse producten.
+					</p>
+				</li>
+				<li class="activiteit" id="FluitketelCurling">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Fluitketel Curling
+					</a>
+					<p class="expanded">
+						Heb je ooit al eens aan curling gedaan? Nee? Probeer het nu met fluitketels en glij door de zaal.
+					</p>
+				</li>
+				<li class="activiteit" id="Kroegsport">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Kroegsport
+					</a>
+					<p class="expanded">
+						Spijkerslaan, tafelvoetbal, darten: hier zijn Bolkers professionals in! Probeer ze te verslaan.
+					</p>
+				</li>
+				<li class="activiteit" id="MixjeMojito">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Mix je Mojito
+					</a>
+					<p class="expanded">
+						Klassieke mojito's zijn erg saai, bij ons kun je experimenteren met gekke ingrediënten.
+					</p>
+				</li>
+				<li class="activiteit" id="LocometChoco">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Loco met Choco
+					</a>
+					<p class="expanded">
+						Chocoladetaart, chocoladecake, chocoladekoekjes, chocoladecocktails, chocolademousse…. Voor als het eten bij het Corps tegenviel.
+					</p>
+				</li>
+				<li class="activiteit" id="Preimeppen">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Preimeppen
+					</a>
+					<p class="expanded">
+						Wist je dat preien geweldige wapens zijn? We hebben er 100, first come first served!
+					</p>
+				</li>
+				<li class="activiteit" id="Kijkhoehetklinkt">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Kijk hoe het klinkt
+					</a>
+					<p class="expanded">
+						Klinken crashende TV's anders dan computers? Raad wat we naar beneden smijten aan de hand van het geluid!
+					</p>
+				</li>
+				<li class="activiteit" id="RobotWars">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Robot Wars
+					</a>
+					<p class="expanded">
+						Barstend metaal, piepende banden, vliegende messen, explosies en meer! Maak met je groepje je eigen bestuurbare gevechtsrobot en vecht tegen een ander groepje!
+					</p>
+				</li>
+				<li class="activiteit" id="Tostiklussen">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Tostiklussen
+					</a>
+					<p class="expanded">
+						De Bolk staat bekend om zijn heerlijke, originele tosti's, dit is jouw kans om je eigen recept te maken.
+					</p>
+				</li>
+				<li class="activiteit" id="IrishHour">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Irish Hour
+					</a>
+					<p class="expanded">
+						Guinness, (Dropkick) Murphys, Irish Coffee, Flogging Molly and Leprechauns, we're going out in style!
+					</p>
+				</li>
+				<li class="activiteit" id="FouteKaraoke">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Foute Karaoke
+					</a>
+					<p class="expanded">
+						Grijp je kans en kom alle nummers waar je stiekem heel erg van geniet meezingen/meeschreeuwen achter een microfoon.
+					</p>
+				</li>
+				<li class="activiteit" id="4-uur-cup-à-soup2">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						4 uur cup-a-soup
+					</a>
+					<p class="expanded">
+						Als je de avond bij ons hebt uitgespeeld kan je bij ons eindigen met een lekker kopje cup-a-soup. Dat zouden meer mensen moeten doen!
+					</p>
+				</li>
+			</ul>
+			<h1 id="activiteiten-Woensdag">Woensdag</h1><ul>
+				<li class="activiteit" id="Retrogamen">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Retrogamen
+					</a>
+					<p class="expanded">
+						Mario Kart Dubble Dash, Super Smash Bros en nog veel meer. Ga de strijd met elkaar aan op oude Nintendo consoles.
+					</p>
+				</li>
+				<li class="activiteit" id="SleutelhangerKnopen">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Knoop je sleutelhanger
+					</a>
+					<p class="expanded">
+						Leer knopen maken, maak je eigen apenvuistje en neem hem mee als sleutelhanger.
+					</p>
+				</li>
+				<li class="activiteit" id="Eettafel3">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Eettafel
+					</a>
+					<p class="expanded">
+						Onze eettafel bestaat uit een voorgerecht, een hoofdgerecht en een toetje, elke dag gemaakt door onze eigen leden met verse producten.
+					</p>
+				</li>
+				<li class="activiteit" id="PimpjeFiets">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Pimp je Fiets
+					</a>
+					<p class="expanded">
+						Heb jij al een fiets in Delft? Pimp hem tot het Delft-proof stalen ros dat je studententijd gaat overleven.
+					</p>
+				</li>
+				<li class="activiteit" id="VloerisLava">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Vloer-is-lava-borrel
+					</a>
+					<p class="expanded">
+						Kom gezellig borrelen in de soos of op ons zeilschip, maar raak de vloer niet aan!
+					</p>
+				</li>
+				<li class="activiteit" id="ToetjeseetWedstrijd">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Toetjeseetwedstrijd
+					</a>
+					<p class="expanded">
+						Taart, koekjes, yoghurt, en nog veel meer. Eet tot je niet meer kan!
+					</p>
+				</li>
+				<li class="activiteit" id="SpeciaalbierProeverij">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Speciaalbierproeverij
+					</a>
+					<p class="expanded">
+						Op het level zit het Bolksche Bierbrouwers Gilde (BBG) klaar om uitleg te geven over allerlei bieren, en natuurlijk kun je die ook proeven!
+					</p>
+				</li>
+				<li class="activiteit" id="Dozenfort">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Dozenfort
+					</a>
+					<p class="expanded">
+						Stapelen maar! Wij hebben heel veel dozen verzameld zodat jullie je eigen fort kunnen bouwen!
+					</p>
+				</li>
+				<li class="activiteit" id="ShortFilmMarathon">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Short Film Marathon
+					</a>
+					<p class="expanded">
+						Wil jij lekker even bijkomen van al dat eten? Plof dan neer op ons level en kom kijken naar korte films.
+					</p>
+				</li>
+				<li class="activiteit" id="Viltjesoorlog">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Bierviltjesoorlog
+					</a>
+					<p class="expanded">
+						Gooi bierviltjes naar elkaar. Je weet dat je dit wil.
+					</p>
+				</li>
+				<li class="activiteit" id="BLIKBIER">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Blikbierkwartier
+					</a>
+					<p class="expanded">
+						Bij een blikbierkwartier sloop je dingen terwijl je blikbier drinkt (en gooit). Gaaf toch?
+					</p>
+				</li>
+				<li class="activiteit" id="HardRockCafé">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Hard Rock Café 
+					</a>
+					<p class="expanded">
+						Scheurende gitaren in overvloed bij het Hard Rock Café.
+					</p>
+				</li>
+				<li class="activiteit" id="4-uur-cup-à-soup3">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						4 uur cup-a-soup
+					</a>
+					<p class="expanded">
+						Als je de avond bij ons hebt uitgespeeld kan je bij ons eindigen met een lekker kopje cup-a-soup. Dat zouden meer mensen moeten doen!
+					</p>
+				</li>
+			</ul>
+			<h1 id="activiteiten-Donderdag">Donderdag</h1><ul>
+				<li class="activiteit" id="Spa">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Spa
+					</a>
+					<p class="expanded">
+						Kom jezelf verwennen met een heerlijk (voeten)badje, gezichtsmasker of ontspannende zoutscrub, als een echte man! Ook staan er badjes op onze botter!
+					</p>
+				</li>
+				<li class="activiteit" id="HighTea">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						High Tea
+					</a>
+					<p class="expanded">
+						Kom in onze lounge ontspannen met thee en koekjes!
+					</p>
+				</li>
+				<li class="activiteit" id="Midgetgolf">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Midgetgolf
+					</a>
+					<p class="expanded">
+						Onze sociëteit is omgetoverd tot een midgetgolfbaan. Let op: hoge moeilijkheidsgraad!
+					</p>
+				</li>
+				<li class="activiteit" id="Eettafel4">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Eettafel
+					</a>
+					<p class="expanded">
+						Onze eettafel bestaat uit een voorgerecht, een hoofdgerecht en een toetje, elke dag gemaakt door onze eigen leden met verse producten.
+					</p>
+				</li>
+				<li class="activiteit" id="BandopdeBoot">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Band op de Boot
+					</a>
+					<p class="expanded">
+						Verschillende Bolkse bandjes komen optreden op het voordek van onze boot. Relax in de lounge en geniet van de zomernacht.
+					</p>
+				</li>
+				<li class="activiteit" id="KoekjesBakken">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Koekjes Bakken
+					</a>
+					<p class="expanded">
+						Bekijk de keuken van de Bolk van binnen en kom gezellig koekjes bakken.
+					</p>
+				</li>
+				<li class="activiteit" id="KrankzinnigeBorrel">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						Krankzinnige Borrel
+					</a>
+					<p class="expanded">
+						Kom Prettig Gestoord doen bij deze borrel. Liever prettig gestoord dan verschrikkelijk gewoontjes!
+					</p>
+				</li>
+				<li class="activiteit" id="4-uur-cup-à-soup4">
+					<a href="javascript:void(0)" class="act-header">
+						<img src="img/plus.png" class="collapsed">
+						<img src="img/min.png" class="expanded">
+						4 uur cup-a-soup
+					</a>
+					<p class="expanded">
+						Als je de avond bij ons hebt uitgespeeld kan je bij ons eindigen met een lekker kopje cup-a-soup. Dat zouden meer mensen moeten doen!
+					</p>
+				</li>
+			</ul>
+			
+		</div>
+</div><!-- Wrapper -->
+
+<nav id="menu"> 
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="vereniging.html">Vereniging</a></li>
+		<li class="active"><a href="programma.html">Programma</a></li>
+		<li><a href="kmt.html">KMT</a></li>
+		<li><a href="sleepinn.html">Sleep-Inn</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+
+</body>
+</html>
